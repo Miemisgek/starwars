@@ -8,5 +8,9 @@
   &.button-primary {
     background-color: transparent;
     border-color: $primary;
+    &:hover {
+      background-color: rgba($primary, 10%);
+      //color: $black;
+    }
   }
 }

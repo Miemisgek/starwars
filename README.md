@@ -8,11 +8,11 @@ Run `npm install`
 
 ## Development server
 
-Run `ng serve`. Open your browser and navigate to http://localhost:4200/. The app should be up and running.
+Run `npm start`. Open your browser and navigate to http://localhost:4200/. The app should be up and running.
 
 ## GIT
 
-Git clone https://github.com/your-username/project-name.git
+Git clone https://github.com/Miemisgek/starwars.git
 
 ## Build
 
