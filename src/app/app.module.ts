@@ -11,7 +11,7 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { CharactersDetailComponent } from "./pages/characters/characters-detail/characters-detail.component";
 import { MenuComponent } from './components/menu/menu.component'
 import { PlanetsComponent } from "./pages/planets/planets.component";
-import { PlanetsDetailComponent } from "./planets-detail/planets-detail.component";
+import { PlanetsDetailComponent } from "./pages/planets/planets-detail/planets-detail.component";
 
 @NgModule({
   declarations: [
