@@ -1,0 +1,21 @@
+nav {
+  .navbar-brand {
+    height: 60px;
+    img {
+      height: 100%;
+    }
+  }
+
+  ul li {
+    padding: 0px 10px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &.active {
+      border-color: $primary;
+      a {
+        color: $white !important;
+      }
+    }
+  }
+}

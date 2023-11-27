@@ -1,0 +1,12 @@
+.button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+
+  &.button-primary {
+    background-color: transparent;
+    border-color: $primary;
+  }
+}

@@ -1,0 +1,32 @@
+table {
+  border: 1px solid $darkgrey;
+  th, td, tr {
+    background-color: transparent;
+    color: white;
+  }
+
+  th {
+    background-color: rgba($primary, 10%);
+  }
+}
+
+.p-paginator {
+  background-color: transparent;
+  color: white;
+
+  .p-link {
+    background-color: transparent;
+    border-radius: 50%;
+
+    &:hover {
+      color: $white;
+      border: 1px solid $primaryDarker;
+    }
+  }
+
+  .p-highlight {
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $primaryDarker;
+  }
+}
