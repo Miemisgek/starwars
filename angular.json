@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "starwars-app:build:production"
+              "buildTarget": "starwars-app:build:production"
             },
             "development": {
-              "browserTarget": "starwars-app:build:development"
+              "buildTarget": "starwars-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "starwars-app:build"
+            "buildTarget": "starwars-app:build"
           }
         },
         "test": {
