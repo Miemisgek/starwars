@@ -12,7 +12,7 @@ import { SwapiService } from "../../../services/swapi.service";
   styleUrl: './characters-detail.component.scss'
 })
 export class CharactersDetailComponent {
-  character!: Character[];
+  character!: Character;
 
   constructor(
     private route: ActivatedRoute,

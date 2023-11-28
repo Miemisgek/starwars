@@ -1,1 +1,26 @@
-<p>planets-detail works!</p>
+<div class="container mt-3">
+  <div class="row justify-content-center align-items-center">
+    <div class="col col-md-10">
+      <div class="row">
+        <div class="col col-md-8">
+          <h1 *ngIf="planet">{{ planet.name }}</h1>
+        </div>
+        <div class="col col-md-4 d-flex justify-content-end align-items-center">
+          <button routerLinkActive="active" [routerLink]="['/planets']" class="button p-button button-primary">Go back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 justify-content-center align-items-center">
+    <div class="col col-md-10">
+      <div class="row mb-3" *ngFor='let planetItem of planet | keyvalue'>
+        <div class="col-12 col-md-2">
+          <div class="label">{{ planetItem.key }}</div>
+        </div>
+        <div class="col-12 col-md-10">
+          <div class="text">{{ planetItem.value }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

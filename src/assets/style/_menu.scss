@@ -6,16 +6,28 @@ nav {
     }
   }
 
-  ul li {
-    padding: 0px 10px;
-    border-radius: 30px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    &.active {
-      border-color: $primary;
-      a {
-        color: $white !important;
+  ul {
+    li {
+      padding: 0px 10px;
+      border-radius: 30px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      &.active {
+        border-color: $primary;
+        a {
+          color: $white !important;
+        }
+      }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: inline-block !important;
+      li {
+        display: inline-block;
       }
     }
+
   }
+
 }

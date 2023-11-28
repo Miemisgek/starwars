@@ -3,18 +3,24 @@
     <div class="col col-md-10">
       <div class="row">
         <div class="col col-md-8">
-          <h1 *ngIf="character">{{ character }}</h1>
+          <h1 *ngIf="character">{{ character.name }} <span class="icon bi-gender-female" *ngIf="character.gender === 'female'"></span><span class="icon bi-gender-male" *ngIf="character.gender === 'male'"></span></h1>
         </div>
-        <div class="col col-md-4 d-flex justify-content-end align-items-end">
+        <div class="col col-md-4 d-flex justify-content-end align-items-center">
           <button routerLinkActive="active" [routerLink]="['/characters']" class="button p-button button-primary">Go back</button>
         </div>
       </div>
     </div>
   </div>
-<!--  <div class="row">-->
-<!--    <div *ngIf="character">-->
-<!--      <h2>{{ character.name }}</h2>-->
-<!--      &lt;!&ndash; Display other details as needed &ndash;&gt;-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="row mt-4 justify-content-center align-items-center">
+    <div class="col col-md-10">
+      <div class="row mb-3" *ngFor='let characterItem of character | keyvalue'>
+        <div class="col-12 col-md-2">
+          <div class="label">{{ characterItem.key }}</div>
+        </div>
+        <div class="col-12 col-md-10">
+          <div class="text">{{ characterItem.value }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

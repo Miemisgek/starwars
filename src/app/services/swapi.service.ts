@@ -29,7 +29,7 @@ export class SwapiService {
     );
   }
 
-  getCharacterData(characterId:number): Observable<Character[]> {
+  getCharacterData(characterId:number): Observable<Character> {
     return this.http.get<any>(`${this.apiUrl}/people/${characterId}/`);
   }
 
@@ -42,12 +42,8 @@ export class SwapiService {
     );
   }
 
-  getPlanetName(planetUrl: string): Observable<any> {
-    const planetId = planetUrl.split('/').filter(Boolean).pop();
-
-    return this.http.get<Planet>(`${this.apiUrl}/planets/${planetId}/`).pipe(
-      map(data => data.name)
-    );
+  getPlanetData(planetId:number): Observable<Planet> {
+    return this.http.get<any>(`${this.apiUrl}/planets/${planetId}/`);
   }
 
 }

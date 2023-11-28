@@ -24,6 +24,16 @@ body {
   }
 }
 
+.color-grey{
+  color: $lightgrey;
+}
+.label {
+  font-weight: 800;
+}
+.text {
+    word-break: break-word;
+}
+
 @import 'assets/style/menu';
 @import 'assets/style/background';
 @import 'assets/style/table';

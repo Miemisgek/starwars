@@ -1,7 +1,8 @@
 <div class="container mt-3">
   <div class="row justify-content-center align-items-center">
     <div class="col col-md-10">
-      <h1>Characters</h1>
+      <h1 class="mb-4">Characters</h1>
+      <p class="color-grey">List with pagination</p>
       <p-table
         [value]="characters"
         [paginator]="true"
@@ -11,7 +12,7 @@
         <ng-template pTemplate="header">
           <tr>
             <th style="width:40%">Name</th>
-            <th>Planet</th>
+            <th>Gender</th>
             <th>Birthyear</th>
             <th></th>
           </tr>
@@ -19,7 +20,7 @@
         <ng-template pTemplate="body" let-character let-i="rowIndex">
           <tr (click)="getDetailPage(i + 1)">
             <td>{{ character.name }}</td>
-            <td></td>
+            <td><span class="icon bi-gender-female" *ngIf="character.gender === 'female'"></span><span class="icon bi-gender-male" *ngIf="character.gender === 'male'"></span><span *ngIf="character.gender === 'n/a'">{{ character.gender }}</span></td>
             <td>{{ character.birthYear }}</td>
             <td><i class="pi pi-arrow-circle-right" style="font-size: 1.4rem"></i></td>
           </tr>
